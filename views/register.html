@@ -24,16 +24,16 @@
          <i class="fas fa-search"></i>
         </div>
 
-        <h2 class="banner-coutas">
-            <h2> <i class="fas fa-hand-holding-usd"></i>
-            Compra en cuotas y sin tarjeta de credito
-        </h2>
+        <div class="banner-cuotas">
+             <i class="fas fa-hand-holding-usd"></i>
+            <a>Compra en cuotas y sin tarjeta de credito</a>
+            </div>
        
 
         <div class="main-navbar">
 
             <ul class="left-navbar">
-            <li><a>Ofertas</a></li>
+            <li><a href="#">Ofertas</a></li>
             <li><a href="#">Tiendas Oficiales</a></li>
             <li><a href="#">Vender</a></li>
             <li><a href="#">Ayuda</a></li>
@@ -56,21 +56,41 @@
     <img src= "/images/img-home-banner.jpg" class="banner-meli">
 
         <main>
+            <section class="section">
         
+                <form class="login" action="/" method="post" enctype="multipart/form-data">
+                    <fieldset>
+                    <label for="name"></label>
+                    <input type="text" name="name" id="name" value="Nombre y apellido">
+                    </fieldset>
+                    
+                    <fieldset>
+                    <label for="username"></label>
+                    <input type="text" name="username" id="usernames" value="Nombre de usuario">
+                    </fieldset>
+
+                    <fieldset>
+                    <label for="date"></label>
+                    <input type="date" name="fecha-nacimiento" id="fecha" value="fecha de nacieminto">
+                    </fieldset>
+                    
+                    <fieldset>
+                    <label for="domicilio"></label>
+                    <input type="text" name="domicilio" id="domicilio" value="Domicilio">
+                    </fieldset>
+
+
+
+
+                    <fieldset>
+                    <div class="login-enviar" button type="submit">Crear</button></div>
+                    </fieldset>
+                 </form>
         
-
-            
-
-
-            
-           
-           
-
-        </main>
-
-    
-
-            
+                </section>
+        
+                </main>
+        
      
 
         <footer class="Pie"></footer>
