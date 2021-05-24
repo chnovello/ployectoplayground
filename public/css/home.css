@@ -16,6 +16,7 @@ header {
 
 .cabecera {
 display: flex;
+flex-wrap: wrap;
 flex-direction: row;
 justify-items: center;
 margin-left: 2vw;
@@ -66,7 +67,7 @@ margin-left: 2vw;
 .banner-cuotas{
     font-size: 18px;
     margin: 40px 10px 2vw;
-    width: 35vw;
+    width: 30vw;
 }
 
 .burger-menu{
@@ -124,7 +125,7 @@ article {
     
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content:start;
     max-width: 45vw;
     align-items: center;
     border: solid 5pz red;
@@ -267,56 +268,57 @@ input:focus{
             background-color: aqua;
         }
 
-.login{
-      
+form.login {
+
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
         width: 100%;
-        margin-top: 40px;
-        padding: auto;
+        margin: 5vw;;
+      
 
 }   
+form.login legend {
+    padding: 10px 0 ;
+}
 
 
-
-
-
-
-     input[type=button], input[type=submit], input[type=reset] {
+input[type=button], input[type=submit], input[type=reset] {
     
-        background-color: #03264C;
+        background-color: #1259c3;
         border: none;
         color: white;
-        padding: 8px 16px;
+        padding: 10px 50px;
         text-decoration: none;
         border-radius: 8px;
-        margin: 10px 2px;
-        cursor: pointer;
-      }
-
-      input[legend] {
-
-        margin: 10px 2px;
-
-      }
-    
+        margin: 12px 2px;
+        
+    }
 
 
+
+/**************************************************************    formularios  register                        *********************/
 
 
  form.register{
     
     display: flex;
     flex-direction: column;
-   
-    justify-content: space-between;
+   justify-content: space-around;
     align-items: center;
-    width: 100%;
-    margin-top: 40px;
+    width: 100vw;
+    margin-top: 20px;
+    padding: 10px 10vw;
     ;
 
 }   
 
+    form.register fieldset {
+    padding: 10px 10px;
+    text-align: justify;
 
+    }
+
+     fieldset.interes {
+        padding: 10px 10px;
+    }
