@@ -13,20 +13,24 @@
     
     <body>
         
-        <header class="main-header">
-       <div class="header"> 
-        <img src= "/images/logo-mercado-liebre.svg" class="logo-meli">
+        <header>
+       
+            <div class="cabecera">
 
-        
-         <div class="barra-busqueda" >Buscar productos, marcas</div>
+                        <img src= "/images/logo-mercado-liebre.svg" class="logo-meli">
+
+                        <div class="barra-busqueda" >Buscar productos, marcas</div>
+
          
-         <div class="search">
-         <i class="fas fa-search"></i>
-        </div>
+                        <div class="search">
+                        <i class="fas fa-search"></i>
+                        </div>
 
-        <div class="banner-cuotas">
-             <i class="fas fa-hand-holding-usd"></i>
-            <a>Compra en cuotas y sin tarjeta de credito</a>
+                        <div class="banner-cuotas">
+                        <i class="fas fa-hand-holding-usd"></i>
+                        <a>Compra en cuotas y sin tarjeta de credito</a>
+                         </div>
+       
             </div>
        
 
@@ -41,7 +45,7 @@
         </ul>   
         
             <ul class="right-navbar">
-            <li><a href="#">Crea tu cuenta</a><i class="far fa-address-card"></i></li>
+            <li><a href="/">Inicio</a><i class="fas fa-home"></i></i></li>
             <li><a href="login">Ingresa</a><i class="fas fa-sign-in-alt"></i></li>
             <li><a href="#">Mis compras</a><i class="fas fa-shopping-basket"></i></li>
             
@@ -58,34 +62,81 @@
         <main>
             <section class="section">
         
-                <form class="login" action="/" method="post" enctype="multipart/form-data">
+                    <form class="register" action="/" method="post" enctype="multipart/form-data">
                     <fieldset>
+                    <legend><b>Nombre y apellido</b></legend>   
                     <label for="name"></label>
-                    <input type="text" name="name" id="name" value="Nombre y apellido">
+                    <input type="text" name="name" id="name">
                     </fieldset>
                     
                     <fieldset>
+                    <legend><b>Nombre de usuario</b></legend>
                     <label for="username"></label>
-                    <input type="text" name="username" id="usernames" value="Nombre de usuario">
+                    <input type="text" name="username" id="usernames">
                     </fieldset>
 
                     <fieldset>
+                    <legend><b>Fecha de nacimiento</b></legend>
                     <label for="date"></label>
-                    <input type="date" name="fecha-nacimiento" id="fecha" value="fecha de nacieminto">
+                    <input type="date" name="fecha nacimiento" id="fecha nacimiento">
                     </fieldset>
                     
                     <fieldset>
+                    <legend><b>Domicilio</b></legend>
                     <label for="domicilio"></label>
-                    <input type="text" name="domicilio" id="domicilio" value="Domicilio">
+                    <input type="text" name="domicilio" id="domicilio">
                     </fieldset>
-
-
-
 
                     <fieldset>
-                    <div class="login-enviar" button type="submit">Crear</button></div>
+                        <legend><b>Perfil de Usuario</b></legend>
+                        <input checked type="radio" name="perfil" id="comprador" value="Comprador">
+                        <label for="comprador">Comprador</label>
+                        <input type="radio" name="perfil" id="vendedor" value="Vendedor">
+                        <label for="vendedor">Vendedor</label>
+
                     </fieldset>
-                 </form>
+
+                    <fieldset>
+                        <legend><b>Interes</b></legend>
+                        <input type="checkbox" name="interes" id="electro" value="electro">
+                        <label for="electro">Electro</label>
+                        <input type="checkbox" name="interes" id="moda" value="moda">
+                        <label for="moda">Moda</label>
+                        <input type="checkbox" name="interes" id="hogar" value="hogar">
+                        <label for="hogar">Hogar</label>
+                        <input type="checkbox" name="interes" id="jugueteria" value="jugueteria">
+                        <label for="jugueteria">Jugueteria</label>
+                        <input type="checkbox" name="interes" id="vida" value="vida">
+                        <label for="vida">Vida sana</label>
+                        
+                    </fieldset>
+
+                    <fieldset>
+                        <legend><b>Foto de perfil</b></legend>
+                        <input type="file" name="foto perfil" id="foto perfil">
+                        <label for="foto"></label>
+                    </fieldset>
+
+                    <fieldset>
+                    <legend><b>Contraseña</b></legend>
+                    <label for="password"></label>
+                    <input type="password" name="password" id="password" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend><b>Confirmar contraseña</b></legend>
+                        <label for="password"></label>
+                        <input type="password" name="password" id="password" required>
+                        </fieldset>
+                        
+
+                    <fieldset>
+                    <div class="login-enviar" button type="submit">Crear cuenta</button></div>
+                    </fieldset>
+                    
+                    <button type="reset">Reset</button>
+                 
+                </form>
         
                 </section>
         
