@@ -127,12 +127,11 @@ article {
     flex-direction: column;
     justify-content:start;
     max-width: 45vw;
-    align-items: center;
-    border: solid 5pz red;
+    
     margin: 10px;
     background-color: #fff;
-    box-shadow : 0px 0px 10px rgb ( 100 , 100 , 100 );
-    
+  
+    box-shadow: 0px 0px 10px rgb(100,100,100);
     
     
 }
@@ -152,20 +151,23 @@ article img {
     
 }
 
-main section article i {
-    display: block;
+main section  i { 
+   
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    max-width: 45vw;
+
     color: #39b54a;
     border: solid 1px #39b54a;
     background-color: #fff;
     border-radius: 50%;
     padding: 5px;
-    
     font-size: 16px;
     width: 30px;
-    height: 30px;
-    position: absolute;
+    height: 30px; 
     right: 20px;
-    margin-top: -15px;
+    margin-top: -20px;
     
     
     
@@ -304,7 +306,7 @@ input[type=button], input[type=submit], input[type=reset] {
     
     display: flex;
     flex-direction: column;
-   justify-content: space-around;
+    justify-content: space-around;
     align-items: center;
     width: 100vw;
     margin-top: 20px;
@@ -321,4 +323,10 @@ input[type=button], input[type=submit], input[type=reset] {
 
      fieldset.interes {
         padding: 10px 10px;
+        display: flex;
+        flex-direction: column;
+      
+
     }
+   
+
